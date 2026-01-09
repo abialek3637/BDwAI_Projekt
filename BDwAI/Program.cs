@@ -1,7 +1,16 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using BDwAI.Areas.Identity.Data;
 var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("AppDBContextConnection") ?? throw new InvalidOperationException("Connection string 'AppDBContextConnection' not found.");;
+
+builder.Services.AddDbContext<AppDBContext>(options => options.UseSqlServer(connectionString));
+
+builder.Services.AddDefaultIdentity<AppUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<AppDBContext>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<BDwAI.Models.ProduktDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("AppDBContextConnection")));
 
 var app = builder.Build();
 
@@ -13,6 +22,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.MapRazorPages();
 app.UseHttpsRedirection();
 app.UseRouting();
 
