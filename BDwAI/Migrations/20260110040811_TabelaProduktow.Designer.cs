@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BDwAI.Migrations
 {
     [DbContext(typeof(ProduktDbContext))]
-    [Migration("20260109123647_ProductTable")]
-    partial class ProductTable
+    [Migration("20260110040811_TabelaProduktow")]
+    partial class TabelaProduktow
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -38,7 +38,7 @@ namespace BDwAI.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvchar(50)");
+                        .HasColumnType("nchar(50)");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");

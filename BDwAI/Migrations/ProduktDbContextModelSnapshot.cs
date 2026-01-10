@@ -35,7 +35,7 @@ namespace BDwAI.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvchar(50)");
+                        .HasColumnType("nchar(50)");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
