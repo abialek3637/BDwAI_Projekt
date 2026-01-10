@@ -5,15 +5,19 @@ namespace BDwAI.Models
 {
     public class Produkt
     {
-        [Key]
-        public int ID { get; set; }
-        [Column(TypeName = "nchar(50)")]
+        public int Id { get; set; }
+
+        [Display(Name = "Nazwa produktu")] // To zmieni nagłówek w tabeli i etykietę w formularzach
         public string Name { get; set; }
-        [Column(TypeName = "text")]
-        public string Description { get; set; }
-        [Column(TypeName = "decimal(18,2)")]
+
+        [Display(Name = "Opis")]
+        public string? Description { get; set; }
+
+        [Display(Name = "Cena")]
+        [Column(TypeName = "decimal(18, 2)")]
         public decimal Price { get; set; }
-        [Column(TypeName = "int")]
+
+        [Display(Name = "Ilość")]
         public int Quantity { get; set; }
     }
 }

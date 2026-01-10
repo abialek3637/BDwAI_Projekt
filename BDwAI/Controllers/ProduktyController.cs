@@ -19,9 +19,17 @@ namespace BDwAI.Controllers
         }
 
         // GET: Produkty
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.Produkts.ToListAsync());
+            var produkty = from p in _context.Produkts
+                           select p;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                produkty = produkty.Where(s => s.Name.Contains(searchString));
+            }
+
+            return View(await produkty.ToListAsync());
         }
 
         // GET: Produkty/Details/5
@@ -33,7 +41,7 @@ namespace BDwAI.Controllers
             }
 
             var produkt = await _context.Produkts
-                .FirstOrDefaultAsync(m => m.ID == id);
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (produkt == null)
             {
                 return NotFound();
@@ -53,7 +61,7 @@ namespace BDwAI.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Name,Description,Price,Quantity")] Produkt produkt)
+        public async Task<IActionResult> Create([Bind("Id,Name,Description,Price,Quantity")] Produkt produkt)
         {
             if (ModelState.IsValid)
             {
@@ -85,9 +93,9 @@ namespace BDwAI.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,Name,Description,Price,Quantity")] Produkt produkt)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Description,Price,Quantity")] Produkt produkt)
         {
-            if (id != produkt.ID)
+            if (id != produkt.Id)
             {
                 return NotFound();
             }
@@ -101,7 +109,7 @@ namespace BDwAI.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ProduktExists(produkt.ID))
+                    if (!ProduktExists(produkt.Id))
                     {
                         return NotFound();
                     }
@@ -124,7 +132,7 @@ namespace BDwAI.Controllers
             }
 
             var produkt = await _context.Produkts
-                .FirstOrDefaultAsync(m => m.ID == id);
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (produkt == null)
             {
                 return NotFound();
@@ -150,7 +158,7 @@ namespace BDwAI.Controllers
 
         private bool ProduktExists(int id)
         {
-            return _context.Produkts.Any(e => e.ID == id);
+            return _context.Produkts.Any(e => e.Id == id);
         }
     }
 }
