@@ -7,7 +7,7 @@ namespace BDwAI.Models
     {
         public int Id { get; set; }
 
-        [Display(Name = "Nazwa produktu")] // To zmieni nagłówek w tabeli i etykietę w formularzach
+        [Display(Name = "Nazwa produktu")] 
         public string Name { get; set; }
 
         [Display(Name = "Opis")]
@@ -19,5 +19,12 @@ namespace BDwAI.Models
 
         [Display(Name = "Ilość")]
         public int Quantity { get; set; }
+        [Display(Name = "Zdjęcie")]
+        public string? ImagePath { get; set; }
+
+        [NotMapped]
+        public IFormFile? ImageFile { get; set; }
+        [Display(Name = "Kategoria")]
+        public int? CategoryId { get; set; }
     }
 }
