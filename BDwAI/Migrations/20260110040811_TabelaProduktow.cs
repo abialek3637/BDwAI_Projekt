@@ -5,7 +5,7 @@
 namespace BDwAI.Migrations
 {
     /// <inheritdoc />
-    public partial class ProductTable : Migration
+    public partial class TabelaProduktow : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -13,10 +13,10 @@ namespace BDwAI.Migrations
             migrationBuilder.AlterColumn<string>(
                 name: "Name",
                 table: "Produkts",
-                type: "nvchar(50)",
+                type: "nchar(50)",
                 nullable: false,
                 oldClrType: typeof(string),
-                oldType: "navchar(50)");
+                oldType: "nchar(50)");
         }
 
         /// <inheritdoc />
@@ -25,10 +25,10 @@ namespace BDwAI.Migrations
             migrationBuilder.AlterColumn<string>(
                 name: "Name",
                 table: "Produkts",
-                type: "navchar(50)",
+                type: "nchar(50)",
                 nullable: false,
                 oldClrType: typeof(string),
-                oldType: "nvchar(50)");
+                oldType: "nchar(50)");
         }
     }
 }
