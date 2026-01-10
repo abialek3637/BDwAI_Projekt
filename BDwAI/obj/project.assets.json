@@ -8596,23 +8596,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bartek\\.nuget\\packages\\": {},
-    "D:\\va2022\\sdk\\NuGetPackages": {}
+    "C:\\Users\\abial\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\BDwAI.csproj",
+      "projectUniqueName": "C:\\Users\\abial\\source\\repos\\BDwAI_Projekt\\BDwAI\\BDwAI.csproj",
       "projectName": "BDwAI",
-      "projectPath": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\BDwAI.csproj",
-      "packagesPath": "C:\\Users\\Bartek\\.nuget\\packages\\",
-      "outputPath": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\obj\\",
+      "projectPath": "C:\\Users\\abial\\source\\repos\\BDwAI_Projekt\\BDwAI\\BDwAI.csproj",
+      "packagesPath": "C:\\Users\\abial\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\abial\\source\\repos\\BDwAI_Projekt\\BDwAI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\va2022\\sdk\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Bartek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\abial\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8621,7 +8621,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -8640,7 +8639,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net9.0": {
@@ -8688,7 +8687,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
