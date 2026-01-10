@@ -12,10 +12,12 @@ namespace BDwAI.Controllers
     public class ProduktyController : Controller
     {
         private readonly ProduktDbContext _context;
+        private readonly IWebHostEnvironment _env;
 
-        public ProduktyController(ProduktDbContext context)
+        public ProduktyController(ProduktDbContext context, IWebHostEnvironment env)
         {
             _context = context;
+            _env = env;
         }
 
         // GET: Produkty
@@ -61,16 +63,33 @@ namespace BDwAI.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Description,Price,Quantity")] Produkt produkt)
+        public async Task<IActionResult> Create([Bind("Id,Name,Description,Price,Quantity,ImageFile,CategoryId")] Produkt produkt)
         {
             if (ModelState.IsValid)
             {
+                if (produkt.ImageFile != null)
+                {
+                    var folder = Path.Combine(_env.WebRootPath, "images");
+
+                    if (!Directory.Exists(folder))
+                        Directory.CreateDirectory(folder);
+
+                    var fileName = Guid.NewGuid() + Path.GetExtension(produkt.ImageFile.FileName);
+                    var path = Path.Combine(folder, fileName);
+
+                    using var stream = new FileStream(path, FileMode.Create);
+                    await produkt.ImageFile.CopyToAsync(stream);
+
+                    produkt.ImagePath = "/images/" + fileName;
+                }
                 _context.Add(produkt);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
             return View(produkt);
         }
+
 
         // GET: Produkty/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -93,7 +112,7 @@ namespace BDwAI.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Description,Price,Quantity")] Produkt produkt)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Description,Price,Quantity,ImageFile,CategoryId")] Produkt produkt)
         {
             if (id != produkt.Id)
             {
@@ -102,6 +121,21 @@ namespace BDwAI.Controllers
 
             if (ModelState.IsValid)
             {
+                if (produkt.ImageFile != null)
+                {
+                    var folder = Path.Combine(_env.WebRootPath, "images");
+
+                    if (!Directory.Exists(folder))
+                        Directory.CreateDirectory(folder);
+
+                    var fileName = Guid.NewGuid() + Path.GetExtension(produkt.ImageFile.FileName);
+                    var path = Path.Combine(folder, fileName);
+
+                    using var stream = new FileStream(path, FileMode.Create);
+                    await produkt.ImageFile.CopyToAsync(stream);
+
+                    produkt.ImagePath = "/images/" + fileName;
+                }
                 try
                 {
                     _context.Update(produkt);

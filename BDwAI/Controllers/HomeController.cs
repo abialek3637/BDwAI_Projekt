@@ -1,21 +1,24 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using BDwAI.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace BDwAI.Controllers;
 
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
+    private readonly ProduktDbContext _context;
+    public HomeController(ILogger<HomeController> logger, ProduktDbContext context)
     {
         _logger = logger;
+        _context = context;
     }
 
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
-        return View();
+        var produkty = await _context.Produkts.ToListAsync();
+        return View(produkty); 
     }
 
     public IActionResult Privacy()

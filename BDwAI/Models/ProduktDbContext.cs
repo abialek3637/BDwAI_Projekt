@@ -7,7 +7,6 @@ namespace BDwAI.Models
         public ProduktDbContext(DbContextOptions<ProduktDbContext> options) : base(options)
         {
         }
-
         public DbSet<Produkt> Produkts { get; set; }
     }
 }

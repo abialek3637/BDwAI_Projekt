@@ -9,7 +9,14 @@
 <div>
     <h4>Produkt</h4>
     <hr />
+
     <dl class="row">
+    <div>
+        @if (!string.IsNullOrEmpty(Model.ImagePath))
+        {
+                <img src="@Model.ImagePath" class="img-fluid" style="max-width:500px;" alt="Zdjęcie produktu" />
+        }
+    </div>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Name)
         </dt>
@@ -35,8 +42,9 @@
             @Html.DisplayFor(model => model.Quantity)
         </dd>
     </dl>
-</div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
     <a asp-action="Index">Wróć do listy</a>
 </div>
+</div>
+

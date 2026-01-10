@@ -1,0 +1,29 @@
+﻿@model BDwAI.Models.Produkt
+
+@{
+    var outOfStock = Model.Quantity == 0;
+}
+
+<div class="col-md-3 mb-4">
+    <div class="card @(outOfStock ? "bg-light text-muted" : "")">
+        <img src="@(Model.ImagePath ?? "/images/no-image.png")" class="card-img-top" alt="@Model.Name" style="height:200px; object-fit:cover;">
+        <div class="card-body">
+            <h5 class="card-title">@Model.Name</h5>
+            <p class="card-text">
+                @if (outOfStock)
+                {
+                    <span class="fw-bold">Brak w magazynie</span>
+                }
+                else
+                {
+                    <span>@Model.Price.ToString("C")</span>
+                }
+            </p>
+
+            @if (!outOfStock)
+            {
+                <a href="@Url.Action("AddToCart", "Cart", new { id = Model.Id })" class="btn btn-primary">Dodaj do koszyka</a>
+            }
+        </div>
+    </div>
+</div>

@@ -1,8 +1,16 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@model IEnumerable<BDwAI.Models.Produkt>
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<h2>Nowości</h2>
+<div class="row">
+    @foreach (var produkt in Model.Where(p => p.CategoryId == 1)) // np. sekcja 1
+    {
+        @await Html.PartialAsync("_ProduktCard", produkt)
+    }
 </div>
