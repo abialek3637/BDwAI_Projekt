@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BDwAI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9a93d0c982e37726cdc3fe67fbe849dede5f3db")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07718816c0144add71ca0410190bb0bce56f2b95")]
 [assembly: System.Reflection.AssemblyProductAttribute("BDwAI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BDwAI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
