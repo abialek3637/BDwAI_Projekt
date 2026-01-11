@@ -14,7 +14,7 @@ namespace BDwAI.Data
         
         public DbSet<Produkt> Produkty { get; set; }
 
-        
+        public DbSet<Category> Categories { get; set; }
         public DbSet<Zamowienie> Zamowienia { get; set; }
         public DbSet<ElementZamowienia> ElementyZamowienia { get; set; }
     }

@@ -10,8 +10,7 @@ namespace BDwAI.Models
         public ProduktDbContext(DbContextOptions<ProduktDbContext> options)
             : base(options)
         {
-        }
-      
+        }     
         public DbSet<Produkt> Produkty { get; set; }
 
         
@@ -23,6 +22,7 @@ namespace BDwAI.Models
             base.OnModelCreating(builder);
             
         }
+
         public DbSet<Category> Categories { get; set; }
 
     }
