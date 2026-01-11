@@ -1,16 +1,41 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model IEnumerable<BDwAI.Models.Produkt>
+@{
+    ViewData["Title"] = "Strona główna";
 }
-@model IEnumerable<BDwAI.Models.Produkt>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="text-center mb-5">
+    <h1 class="display-5 fw-bold">Przypraw swoją kuchnię z Prymat 🌿</h1>
+    <p class="lead">
+        Najwyższej jakości przyprawy, które podkreślą smak każdego dania.
+    </p>
 </div>
-<h2>Nowości</h2>
-<div class="row">
-    @foreach (var produkt in Model.Where(p => p.CategoryId == 1)) // np. sekcja 1
-    {
-        @await Html.PartialAsync("_ProduktCard", produkt)
-    }
-</div>
+
+<section class="mb-5">
+    <h2 class="mb-3">🔥 Coś na ostro</h2>
+    <div class="row g-4">
+        @foreach (var produkt in Model.Where(p => p.CategoryId == 1))
+        {
+            @await Html.PartialAsync("_ProduktCard", produkt)
+        }
+    </div>
+</section>
+
+<section class="mb-5">
+    <h2 class="mb-3">🌱 Smaki orientalne</h2>
+    <div class="row g-4">
+        @foreach (var produkt in Model.Where(p => p.CategoryId == 2))
+        {
+            @await Html.PartialAsync("_ProduktCard", produkt)
+        }
+    </div>
+</section>
+
+<section class="mb-5">
+    <h2 class="mb-3">🌍 Dla miłośników słodkiego</h2>
+    <div class="row g-4">
+        @foreach (var produkt in Model.Where(p => p.CategoryId == 3))
+        {
+            @await Html.PartialAsync("_ProduktCard", produkt)
+        }
+    </div>
+</section>

@@ -22,7 +22,7 @@
 
             @if (!outOfStock)
             {
-                <a href="@Url.Action("AddToCart", "Cart", new { id = Model.Id })" class="btn btn-primary">Dodaj do koszyka</a>
+                <a href="@Url.Action("Buy", "Home", new { id = Model.Id })" class="btn btn-primary">Kup teraz</a>
             }
         </div>
     </div>

@@ -3,36 +3,40 @@
   "WorkspaceRootPath": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|d:\\dokumenty\\projektbdwai\\bdwai_projekt\\bdwai\\bdwai\\views\\shared\\_produktcard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|solutionrelative:bdwai\\views\\shared\\_produktcard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|d:\\dokumenty\\projektbdwai\\bdwai_projekt\\bdwai\\bdwai\\views\\home\\buy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|solutionrelative:bdwai\\views\\home\\buy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|d:\\dokumenty\\projektbdwai\\bdwai_projekt\\bdwai\\bdwai\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|solutionrelative:bdwai\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|d:\\dokumenty\\projektbdwai\\bdwai_projekt\\bdwai\\bdwai\\models\\produkt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|solutionrelative:bdwai\\models\\produkt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|d:\\dokumenty\\projektbdwai\\bdwai_projekt\\bdwai\\bdwai\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|solutionrelative:bdwai\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|d:\\dokumenty\\projektbdwai\\bdwai_projekt\\bdwai\\bdwai\\views\\shared\\_produktcard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|solutionrelative:bdwai\\views\\shared\\_produktcard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|d:\\dokumenty\\projektbdwai\\bdwai_projekt\\bdwai\\bdwai\\controllers\\produktycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|solutionrelative:bdwai\\controllers\\produktycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|d:\\dokumenty\\projektbdwai\\bdwai_projekt\\bdwai\\bdwai\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|solutionrelative:bdwai\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|d:\\dokumenty\\projektbdwai\\bdwai_projekt\\bdwai\\bdwai\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|solutionrelative:bdwai\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|d:\\dokumenty\\projektbdwai\\bdwai_projekt\\bdwai\\bdwai\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|solutionrelative:bdwai\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|d:\\dokumenty\\projektbdwai\\bdwai_projekt\\bdwai\\bdwai\\views\\produkty\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|solutionrelative:bdwai\\views\\produkty\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|d:\\dokumenty\\projektbdwai\\bdwai_projekt\\bdwai\\bdwai\\views\\produkty\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|solutionrelative:bdwai\\views\\produkty\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|d:\\dokumenty\\projektbdwai\\bdwai_projekt\\bdwai\\bdwai\\models\\produkt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|solutionrelative:bdwai\\models\\produkt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,37 +46,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 303,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Produkt.cs",
+              "DocumentMoniker": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\Models\\Produkt.cs",
+              "RelativeDocumentMoniker": "BDwAI\\Models\\Produkt.cs",
+              "ToolTip": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\Models\\Produkt.cs",
+              "RelativeToolTip": "BDwAI\\Models\\Produkt.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowBYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T00:13:21.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Buy.cshtml",
+              "DocumentMoniker": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\Views\\Home\\Buy.cshtml",
+              "RelativeDocumentMoniker": "BDwAI\\Views\\Home\\Buy.cshtml",
+              "ToolTip": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\Views\\Home\\Buy.cshtml*",
+              "RelativeToolTip": "BDwAI\\Views\\Home\\Buy.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-11T00:09:54.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "BDwAI\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "BDwAI\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-10T23:55:53.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "_ProduktCard.cshtml",
               "DocumentMoniker": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\Views\\Shared\\_ProduktCard.cshtml",
               "RelativeDocumentMoniker": "BDwAI\\Views\\Shared\\_ProduktCard.cshtml",
               "ToolTip": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\Views\\Shared\\_ProduktCard.cshtml",
               "RelativeToolTip": "BDwAI\\Views\\Shared\\_ProduktCard.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-01-10T14:48:49.495Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "BDwAI\\Views\\Home\\Index.cshtml",
               "ToolTip": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "BDwAI\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-01-10T14:45:58.076Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\Program.cs",
               "RelativeDocumentMoniker": "BDwAI\\Program.cs",
@@ -91,14 +134,14 @@
               "RelativeDocumentMoniker": "BDwAI\\Controllers\\HomeController.cs",
               "ToolTip": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\Controllers\\HomeController.cs",
               "RelativeToolTip": "BDwAI\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-10T14:45:41.863Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ProduktyController.cs",
               "DocumentMoniker": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\Controllers\\ProduktyController.cs",
               "RelativeDocumentMoniker": "BDwAI\\Controllers\\ProduktyController.cs",
@@ -111,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\Views\\Produkty\\Edit.cshtml",
               "RelativeDocumentMoniker": "BDwAI\\Views\\Produkty\\Edit.cshtml",
@@ -119,40 +162,7 @@
               "RelativeToolTip": "BDwAI\\Views\\Produkty\\Edit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-10T14:35:38.361Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 97,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\Views\\Produkty\\Create.cshtml",
-              "RelativeDocumentMoniker": "BDwAI\\Views\\Produkty\\Create.cshtml",
-              "ToolTip": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\Views\\Produkty\\Create.cshtml",
-              "RelativeToolTip": "BDwAI\\Views\\Produkty\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-10T12:53:13.23Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Produkt.cs",
-              "DocumentMoniker": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\Models\\Produkt.cs",
-              "RelativeDocumentMoniker": "BDwAI\\Models\\Produkt.cs",
-              "ToolTip": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\Models\\Produkt.cs",
-              "RelativeToolTip": "BDwAI\\Models\\Produkt.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAADwvxsAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-09T11:46:07.956Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-10T14:35:38.361Z"
             }
           ]
         }
