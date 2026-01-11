@@ -30,7 +30,7 @@ namespace BDwAI.Controllers
         {
            
            
-            
+           
             var produkty = await _context.Produkty.ToListAsync();
             ViewBag.Categories = await _context.Categories.ToListAsync();
             return View(produkty);

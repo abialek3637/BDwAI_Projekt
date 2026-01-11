@@ -25,7 +25,6 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Strona główna</a>
                         </li>
-                        
                         @if (User.IsInRole("Admin"))
                         {
                             <li class="nav-item">
@@ -33,13 +32,14 @@
                                     📦 Panel produktów
                                 </a>
                             </li>
-
+    
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Zamowienia" asp-action="Index">
                                     📂 Zobacz Zamówienia
                                 </a>
                             </li>
                         }
+                        
                     </ul>
 
                     <partial name="_LoginPartial" />
