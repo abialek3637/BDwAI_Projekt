@@ -1,0 +1,14 @@
+﻿@model IEnumerable<BDwAI.Models.Produkt>
+@{
+    ViewData["Title"] = ViewBag.CategoryName;
+}
+
+<section class="mb-5">
+    <h2 class="display-6 fw-bold">@ViewBag.CategoryName</h2>
+    <div class="row g-4">
+        @foreach (var produkt in Model)
+        {
+            @await Html.PartialAsync("_ProduktCard", produkt)
+        }
+    </div>
+</section>

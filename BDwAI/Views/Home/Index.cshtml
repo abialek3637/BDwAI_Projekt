@@ -1,6 +1,7 @@
 ﻿@model IEnumerable<BDwAI.Models.Produkt>
 @{
     ViewData["Title"] = "Strona główna";
+    var categories = ViewBag.Categories;
 }
 
 <div class="text-center mb-5">
@@ -8,6 +9,7 @@
     <p class="lead">Najwyższej jakości przyprawy, które podkreślą smak każdego dania.</p>
 </div>
 
+<<<<<<< HEAD
 <div class="row g-4">
     @foreach (var produkt in Model)
     {
@@ -45,3 +47,32 @@
         </div>
     }
 </div>
+=======
+@foreach (var cat in categories)
+{
+    <section class="mb-5">
+        <a class="text-decoration-none text-dark"
+        asp-controller="Home"
+        asp-action="Category"
+        asp-route-id="@cat.Id">
+            <h2 class="display-6 fw-bold">@cat.Name</h2>
+        </a>
+
+        <div class="row g-4">
+
+            @{ 
+                int i = 0;
+                @foreach (var produkt in Model.Where(p => p.CategoryId == cat.Id))
+                {
+                    i++;
+                    if (i > 4) break;
+                    @await Html.PartialAsync("_ProduktCard", produkt)
+                }
+          }
+
+        </div>
+    </section>
+
+}
+
+>>>>>>> B
