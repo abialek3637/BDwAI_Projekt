@@ -18,36 +18,28 @@ namespace BDwAI.Controllers
             _context = context;
         }
 
-<<<<<<< HEAD
+        public async Task<IActionResult> Category(int? id)
+        {
+            if (id == null) return NotFound();
+            var category = await _context.Categories.FindAsync(id);
+            ViewBag.CategoryName = category.Name;
+            var products = await _context.Produkty.Where(p => p.CategoryId == id).ToListAsync();
+            return View(products);
+        }
         public async Task<IActionResult> Index()
         {
-            
+           
+           
             if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
             {
                 
                 return RedirectToAction("Index", "Produkty");
               
             }
-=======
-    public async Task<IActionResult> Category(int? id)
-    {
-        if (id == null) return NotFound();
-        var category = await _context.Categories.FindAsync(id);
-        ViewBag.CategoryName = category.Name;
-        var products = await _context.Produkts.Where(p => p.CategoryId == id).ToListAsync();
-        return View(products);
-    }
-    public async Task<IActionResult> Index()
-    {
-        var produkty = await _context.Produkts.ToListAsync();
-        ViewBag.Categories = await _context.Categories.ToListAsync();
-        return View(produkty); 
-    }
->>>>>>> B
-
-          
             var produkty = await _context.Produkty.ToListAsync();
+            ViewBag.Categories = await _context.Categories.ToListAsync();
             return View(produkty);
+
         }
 
         public IActionResult Privacy()

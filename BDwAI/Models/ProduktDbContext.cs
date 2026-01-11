@@ -11,8 +11,6 @@ namespace BDwAI.Models
             : base(options)
         {
         }
-<<<<<<< HEAD
-
       
         public DbSet<Produkt> Produkty { get; set; }
 
@@ -25,9 +23,7 @@ namespace BDwAI.Models
             base.OnModelCreating(builder);
             
         }
-=======
-        public DbSet<Produkt> Produkts { get; set; }
         public DbSet<Category> Categories { get; set; }
->>>>>>> B
+
     }
 }

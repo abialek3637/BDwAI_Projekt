@@ -6,13 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BDwAI.Models;
-<<<<<<< HEAD
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Authorization;
 using BDwAI.Data;
-=======
-using System.Diagnostics;
->>>>>>> B
 
 namespace BDwAI.Controllers
 {
