@@ -6,24 +6,29 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BDwAI.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authorization;
+using BDwAI.Data;
 
 namespace BDwAI.Controllers
 {
     public class ProduktyController : Controller
     {
-        private readonly ProduktDbContext _context;
+        private readonly AppDBContext _context;
+        private readonly UserManager<AppUser> _userManager;
         private readonly IWebHostEnvironment _env;
-
-        public ProduktyController(ProduktDbContext context, IWebHostEnvironment env)
+        public ProduktyController(AppDBContext context, UserManager<AppUser> userManager, IWebHostEnvironment env)
         {
             _context = context;
+            _userManager = userManager;
+            _env = env;
             _env = env;
         }
 
         // GET: Produkty
         public async Task<IActionResult> Index(string searchString)
         {
-            var produkty = from p in _context.Produkts
+            var produkty = from p in _context.Produkty
                            select p;
 
             if (!String.IsNullOrEmpty(searchString))
@@ -42,7 +47,7 @@ namespace BDwAI.Controllers
                 return NotFound();
             }
 
-            var produkt = await _context.Produkts
+            var produkt = await _context.Produkty
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (produkt == null)
             {
@@ -99,7 +104,7 @@ namespace BDwAI.Controllers
                 return NotFound();
             }
 
-            var produkt = await _context.Produkts.FindAsync(id);
+            var produkt = await _context.Produkty.FindAsync(id);
             if (produkt == null)
             {
                 return NotFound();
@@ -165,7 +170,7 @@ namespace BDwAI.Controllers
                 return NotFound();
             }
 
-            var produkt = await _context.Produkts
+            var produkt = await _context.Produkty
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (produkt == null)
             {
@@ -180,10 +185,10 @@ namespace BDwAI.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var produkt = await _context.Produkts.FindAsync(id);
+            var produkt = await _context.Produkty.FindAsync(id);
             if (produkt != null)
             {
-                _context.Produkts.Remove(produkt);
+                _context.Produkty.Remove(produkt);
             }
 
             await _context.SaveChangesAsync();
@@ -192,7 +197,75 @@ namespace BDwAI.Controllers
 
         private bool ProduktExists(int id)
         {
-            return _context.Produkts.Any(e => e.Id == id);
+            return _context.Produkty.Any(e => e.Id == id);
+        }
+        [Authorize] // Wymaga logowania (opcjonalne, usuń jeśli każdy może kupić)
+        public async Task<IActionResult> Kup(int? id)
+        {
+            if (id == null) return NotFound();
+
+            var produkt = await _context.Produkty.FindAsync(id);
+            if (produkt == null) return NotFound();
+
+            // Tworzymy nowe zamówienie i wstępnie je wypełniamy
+            var zamowienie = new Zamowienie();
+
+            // Jeśli użytkownik jest zalogowany, pobierz jego dane
+            var user = await _userManager.GetUserAsync(User);
+            if (user != null)
+            {
+                zamowienie.Imie = user.FirstName ?? "";
+                zamowienie.Nazwisko = user.LastName ?? "";
+                zamowienie.Adres = user.Street ?? "";
+                zamowienie.Miasto = user.City ?? "";
+                zamowienie.KodPocztowy = user.ZipCode ?? "";
+                zamowienie.AppUserId = user.Id;
+            }
+
+            // Przekazujemy produkt przez ViewBag, żeby wyświetlić jego nazwę i cenę
+            ViewBag.Produkt = produkt;
+
+            return View(zamowienie);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Kup(Zamowienie zamowienie, int produktId, int ilosc)
+        {
+            // 1. Pobieramy produkt z bazy, żeby znać aktualną cenę
+            var produkt = await _context.Produkty.FindAsync(produktId);
+
+            if (produkt != null)
+            {
+                // 2. Ustawiamy datę i całkowitą kwotę
+                zamowienie.DataZamowienia = DateTime.Now;
+                zamowienie.TotalAmount = produkt.Price * ilosc;
+
+                // Jeśli user jest zalogowany, przypisz ID (dla pewności)
+                var user = await _userManager.GetUserAsync(User);
+                if (user != null) zamowienie.AppUserId = user.Id;
+
+                // 3. Tworzymy element zamówienia (co kupił)
+                var element = new ElementZamowienia
+                {
+                    ProduktId = produktId,
+                    CenaJednostkowa = produkt.Price,
+                    Ilosc = ilosc,
+                    Zamowienie = zamowienie // EF sam połączy te obiekty
+                };
+
+                // 4. Dodajemy do bazy
+                _context.Zamowienia.Add(zamowienie);
+                _context.ElementyZamowienia.Add(element);
+
+                // Zmniejsz stan magazynowy (opcjonalnie)
+                produkt.Quantity -= ilosc;
+
+                await _context.SaveChangesAsync();
+
+                return RedirectToAction(nameof(Index)); // Wróć do listy po sukcesie
+            }
+
+            return View(zamowienie);
         }
     }
 }
