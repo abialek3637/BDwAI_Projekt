@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|d:\\dokumenty\\projektbdwai\\bdwai_projekt\\bdwai\\bdwai\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|solutionrelative:bdwai\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|d:\\dokumenty\\projektbdwai\\bdwai_projekt\\bdwai\\bdwai\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|solutionrelative:bdwai\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|d:\\dokumenty\\projektbdwai\\bdwai_projekt\\bdwai\\bdwai\\controllers\\produktycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|solutionrelative:bdwai\\controllers\\produktycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|d:\\dokumenty\\projektbdwai\\bdwai_projekt\\bdwai\\bdwai\\views\\home\\category.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|solutionrelative:bdwai\\views\\home\\category.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|d:\\dokumenty\\projektbdwai\\bdwai_projekt\\bdwai\\bdwai\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|solutionrelative:bdwai\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|d:\\dokumenty\\projektbdwai\\bdwai_projekt\\bdwai\\bdwai\\controllers\\produktycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|solutionrelative:bdwai\\controllers\\produktycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|d:\\dokumenty\\projektbdwai\\bdwai_projekt\\bdwai\\bdwai\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|solutionrelative:bdwai\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|d:\\dokumenty\\projektbdwai\\bdwai_projekt\\bdwai\\bdwai\\models\\produktdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|d:\\dokumenty\\projektbdwai\\bdwai_projekt\\bdwai\\bdwai\\areas\\identity\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|solutionrelative:bdwai\\areas\\identity\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|d:\\dokumenty\\projektbdwai\\bdwai_projekt\\bdwai\\bdwai\\views\\home\\category.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|solutionrelative:bdwai\\views\\home\\category.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AAE8F852-F2BB-4A64-AF9F-60C69DBE66CC}|BDwAI\\BDwAI.csproj|d:\\dokumenty\\projektbdwai\\bdwai_projekt\\bdwai\\bdwai\\models\\produkt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,11 +70,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 417,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "ProduktyController.cs",
               "DocumentMoniker": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\Controllers\\ProduktyController.cs",
               "RelativeDocumentMoniker": "BDwAI\\Controllers\\ProduktyController.cs",
@@ -87,7 +91,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Category.cs",
               "DocumentMoniker": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\Models\\Category.cs",
               "RelativeDocumentMoniker": "BDwAI\\Models\\Category.cs",
@@ -100,20 +104,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "BDwAI\\Views\\Home\\Index.cshtml",
               "ToolTip": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "BDwAI\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAwwB8AAABFAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAwwBQAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-01-10T14:45:58.076Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ProduktDbContext.cs",
               "DocumentMoniker": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\Models\\ProduktDbContext.cs",
               "RelativeDocumentMoniker": "BDwAI\\Models\\ProduktDbContext.cs",
@@ -126,13 +130,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "BDwAI\\Controllers\\HomeController.cs",
               "ToolTip": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\Controllers\\HomeController.cs",
               "RelativeToolTip": "BDwAI\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowCMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAA9wCkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-10T14:45:41.863Z",
               "EditorCaption": ""
@@ -152,26 +156,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AppDBContext.cs",
               "DocumentMoniker": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\Areas\\Identity\\Data\\AppDBContext.cs",
               "RelativeDocumentMoniker": "BDwAI\\Areas\\Identity\\Data\\AppDBContext.cs",
               "ToolTip": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\Areas\\Identity\\Data\\AppDBContext.cs",
               "RelativeToolTip": "BDwAI\\Areas\\Identity\\Data\\AppDBContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-11T14:56:38.254Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Category.cshtml",
               "DocumentMoniker": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\Views\\Home\\Category.cshtml",
               "RelativeDocumentMoniker": "BDwAI\\Views\\Home\\Category.cshtml",
               "ToolTip": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\Views\\Home\\Category.cshtml",
               "RelativeToolTip": "BDwAI\\Views\\Home\\Category.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-01-11T14:15:45.083Z",
               "EditorCaption": ""

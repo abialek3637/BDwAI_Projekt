@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Eabrbd0GSq/ZIS+dF86b+qjYXzP0oY1IN3P/OYbrUuY=",
+  "Hash": "0txgncCJk4eVt7GUb6vpSwwbzWq4jxG2cVmGvG0XsAI=",
   "Source": "BDwAI",
   "BasePath": "_content/BDwAI",
   "Mode": "Default",
@@ -4091,6 +4091,27 @@
       "OriginalItemSpec": "wwwroot\\images\\3842f768-68ad-4c91-a436-55bbc0b34254.jpg"
     },
     {
+      "Identity": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\wwwroot\\images\\507bc86a-c4a5-4715-891f-9b3ddf98dd33.jpg",
+      "SourceId": "BDwAI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\wwwroot\\",
+      "BasePath": "_content/BDwAI",
+      "RelativePath": "images/507bc86a-c4a5-4715-891f-9b3ddf98dd33#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lstzb9qltv",
+      "Integrity": "lRD/Q9whASBV2QccGi3acc1plSCmEh+Ddt7VsxKWtVQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\507bc86a-c4a5-4715-891f-9b3ddf98dd33.jpg"
+    },
+    {
       "Identity": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\wwwroot\\images\\5219de20-58b9-401a-af2d-8c97dc8b01ed.jpg",
       "SourceId": "BDwAI",
       "SourceType": "Discovered",
@@ -4133,6 +4154,27 @@
       "OriginalItemSpec": "wwwroot\\images\\6a68471e-220c-4b39-ac36-4875fb266d1a.jpg"
     },
     {
+      "Identity": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\wwwroot\\images\\8f5df50e-4e78-45d8-a865-41d76827000a.jpg",
+      "SourceId": "BDwAI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\wwwroot\\",
+      "BasePath": "_content/BDwAI",
+      "RelativePath": "images/8f5df50e-4e78-45d8-a865-41d76827000a#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lstzb9qltv",
+      "Integrity": "lRD/Q9whASBV2QccGi3acc1plSCmEh+Ddt7VsxKWtVQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\8f5df50e-4e78-45d8-a865-41d76827000a.jpg"
+    },
+    {
       "Identity": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\wwwroot\\images\\af3e970c-562e-4558-b71d-8ab7fb01d00c.jpg",
       "SourceId": "BDwAI",
       "SourceType": "Discovered",
@@ -4152,6 +4194,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\af3e970c-562e-4558-b71d-8ab7fb01d00c.jpg"
+    },
+    {
+      "Identity": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\wwwroot\\images\\fef6fcc0-fc34-43f9-84e4-cbce3083bdac.jpg",
+      "SourceId": "BDwAI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\wwwroot\\",
+      "BasePath": "_content/BDwAI",
+      "RelativePath": "images/fef6fcc0-fc34-43f9-84e4-cbce3083bdac#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "g1p41d7o3u",
+      "Integrity": "PEP+HNaKkqSEP+sQDytfzdR90jMoYCj91kM/HMe5Uao=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\fef6fcc0-fc34-43f9-84e4-cbce3083bdac.jpg"
     },
     {
       "Identity": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\wwwroot\\js\\site.js",
@@ -5461,7 +5524,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 Jan 2026 11:18:06 GMT"
+          "Value": "Sun, 11 Jan 2026 15:53:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5522,7 +5585,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 Jan 2026 11:18:06 GMT"
+          "Value": "Sun, 11 Jan 2026 15:53:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5567,7 +5630,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 Jan 2026 11:18:06 GMT"
+          "Value": "Sun, 11 Jan 2026 15:53:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5622,7 +5685,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 Jan 2026 11:18:06 GMT"
+          "Value": "Sun, 11 Jan 2026 15:53:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5683,7 +5746,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 Jan 2026 11:18:06 GMT"
+          "Value": "Sun, 11 Jan 2026 15:53:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5728,7 +5791,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 Jan 2026 11:18:06 GMT"
+          "Value": "Sun, 11 Jan 2026 15:53:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5783,7 +5846,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 Jan 2026 11:18:06 GMT"
+          "Value": "Sun, 11 Jan 2026 15:53:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5836,7 +5899,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 Jan 2026 11:18:06 GMT"
+          "Value": "Sun, 11 Jan 2026 15:53:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5873,7 +5936,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 Jan 2026 11:18:06 GMT"
+          "Value": "Sun, 11 Jan 2026 15:53:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5920,7 +5983,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 Jan 2026 11:18:06 GMT"
+          "Value": "Sun, 11 Jan 2026 15:53:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5973,7 +6036,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 Jan 2026 11:18:06 GMT"
+          "Value": "Sun, 11 Jan 2026 15:53:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6010,7 +6073,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 Jan 2026 11:18:06 GMT"
+          "Value": "Sun, 11 Jan 2026 15:53:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15242,6 +15305,88 @@
       ]
     },
     {
+      "Route": "images/507bc86a-c4a5-4715-891f-9b3ddf98dd33.jpg",
+      "AssetFile": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\wwwroot\\images\\507bc86a-c4a5-4715-891f-9b3ddf98dd33.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25749"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lRD/Q9whASBV2QccGi3acc1plSCmEh+Ddt7VsxKWtVQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 Jan 2026 15:46:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lRD/Q9whASBV2QccGi3acc1plSCmEh+Ddt7VsxKWtVQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/507bc86a-c4a5-4715-891f-9b3ddf98dd33.lstzb9qltv.jpg",
+      "AssetFile": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\wwwroot\\images\\507bc86a-c4a5-4715-891f-9b3ddf98dd33.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25749"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lRD/Q9whASBV2QccGi3acc1plSCmEh+Ddt7VsxKWtVQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 Jan 2026 15:46:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lstzb9qltv"
+        },
+        {
+          "Name": "label",
+          "Value": "images/507bc86a-c4a5-4715-891f-9b3ddf98dd33.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lRD/Q9whASBV2QccGi3acc1plSCmEh+Ddt7VsxKWtVQ="
+        }
+      ]
+    },
+    {
       "Route": "images/5219de20-58b9-401a-af2d-8c97dc8b01ed.g1p41d7o3u.jpg",
       "AssetFile": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\wwwroot\\images\\5219de20-58b9-401a-af2d-8c97dc8b01ed.jpg",
       "Selectors": [],
@@ -15406,6 +15551,88 @@
       ]
     },
     {
+      "Route": "images/8f5df50e-4e78-45d8-a865-41d76827000a.jpg",
+      "AssetFile": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\wwwroot\\images\\8f5df50e-4e78-45d8-a865-41d76827000a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25749"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lRD/Q9whASBV2QccGi3acc1plSCmEh+Ddt7VsxKWtVQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 Jan 2026 15:46:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lRD/Q9whASBV2QccGi3acc1plSCmEh+Ddt7VsxKWtVQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/8f5df50e-4e78-45d8-a865-41d76827000a.lstzb9qltv.jpg",
+      "AssetFile": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\wwwroot\\images\\8f5df50e-4e78-45d8-a865-41d76827000a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25749"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lRD/Q9whASBV2QccGi3acc1plSCmEh+Ddt7VsxKWtVQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 Jan 2026 15:46:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lstzb9qltv"
+        },
+        {
+          "Name": "label",
+          "Value": "images/8f5df50e-4e78-45d8-a865-41d76827000a.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lRD/Q9whASBV2QccGi3acc1plSCmEh+Ddt7VsxKWtVQ="
+        }
+      ]
+    },
+    {
       "Route": "images/af3e970c-562e-4558-b71d-8ab7fb01d00c.jpg",
       "AssetFile": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\wwwroot\\images\\af3e970c-562e-4558-b71d-8ab7fb01d00c.jpg",
       "Selectors": [],
@@ -15484,6 +15711,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-lRD/Q9whASBV2QccGi3acc1plSCmEh+Ddt7VsxKWtVQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/fef6fcc0-fc34-43f9-84e4-cbce3083bdac.g1p41d7o3u.jpg",
+      "AssetFile": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\wwwroot\\images\\fef6fcc0-fc34-43f9-84e4-cbce3083bdac.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4851"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PEP+HNaKkqSEP+sQDytfzdR90jMoYCj91kM/HMe5Uao=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 Jan 2026 15:45:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g1p41d7o3u"
+        },
+        {
+          "Name": "label",
+          "Value": "images/fef6fcc0-fc34-43f9-84e4-cbce3083bdac.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PEP+HNaKkqSEP+sQDytfzdR90jMoYCj91kM/HMe5Uao="
+        }
+      ]
+    },
+    {
+      "Route": "images/fef6fcc0-fc34-43f9-84e4-cbce3083bdac.jpg",
+      "AssetFile": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\wwwroot\\images\\fef6fcc0-fc34-43f9-84e4-cbce3083bdac.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4851"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PEP+HNaKkqSEP+sQDytfzdR90jMoYCj91kM/HMe5Uao=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 Jan 2026 15:45:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PEP+HNaKkqSEP+sQDytfzdR90jMoYCj91kM/HMe5Uao="
         }
       ]
     },
