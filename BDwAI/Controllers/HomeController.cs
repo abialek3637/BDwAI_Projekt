@@ -15,6 +15,16 @@ public class HomeController : Controller
         _context = context;
     }
 
+    public IActionResult Buy(int id)
+    {
+        var produkt = _context.Produkts.FirstOrDefault(p => p.Id == id);
+        if (produkt == null)
+        {
+            return NotFound();
+        }
+        return View(produkt);
+    }
+
     public async Task<IActionResult> Index()
     {
         var produkty = await _context.Produkts.ToListAsync();
