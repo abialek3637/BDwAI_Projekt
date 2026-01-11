@@ -1,54 +1,56 @@
 ﻿@model IEnumerable<BDwAI.Models.Produkt>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Zarządzanie Produktami";
 }
 
-<h1>Lista Produktów</h1>
-
-<p>
-    <a asp-action="Create">Dodaj nowy produkt</a>
-</p>
-<form asp-controller="Produkty" asp-action="Index" method="get">
-    <p>
-        Szukaj: <input type="text" name="searchString" />
-        <input type="submit" value="Szukaj" class="btn btn-primary" />
-    </p>
-</form>
-<table class="table table-striped table-hover">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Quantity)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Quantity)
-            </td>
-            <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Edytuj</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Szczegóły</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Usuń</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
-@if (!Model.Any())
-{
-    <div class="alert alert-warning">
-        Nie znaleziono żadnych produktów.
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h1>Panel Administratora</h1>
+        <a asp-action="Create" class="btn btn-success">
+            <i class="bi bi-plus-circle"></i> Dodaj nowy produkt
+        </a>
     </div>
-}
+    <a asp-controller="Zamowienia" asp-action="Index" class="btn btn-warning ms-2">
+        📂 Zobacz Zamówienia
+    </a>
+    <table class="table table-striped table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>Nazwa</th>
+                <th>Cena</th>
+                <th>Ilość</th>
+                <th>Kategoria</th>
+                <th>Akcje</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="fw-bold">@item.Name</td>
+                    <td>@item.Price.ToString("c")</td>
+                    <td>
+                        @if (item.Quantity < 5)
+                        {
+                            <span class="text-danger fw-bold">@item.Quantity (Niski stan!)</span>
+                        }
+                        else
+                        {
+
+                            <span>@item.Quantity</span>
+                        }
+                    </td>
+                    <td>@item.CategoryId</td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Edytuj</a>
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info">Szczegóły</a>
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Usuń</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

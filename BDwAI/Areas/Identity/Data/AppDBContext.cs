@@ -1,22 +1,21 @@
-﻿using BDwAI.Areas.Identity.Data;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-
-namespace BDwAI.Areas.Identity.Data;
-
-public class AppDBContext : IdentityDbContext<AppUser>
+using BDwAI.Models; 
+namespace BDwAI.Data
 {
-    public AppDBContext(DbContextOptions<AppDBContext> options)
-        : base(options)
+    public class AppDBContext : IdentityDbContext<AppUser>
     {
-    }
+        public AppDBContext(DbContextOptions<AppDBContext> options)
+            : base(options)
+        {
+        }
 
-    protected override void OnModelCreating(ModelBuilder builder)
-    {
-        base.OnModelCreating(builder);
-        // Customize the ASP.NET Identity model and override the defaults if needed.
-        // For example, you can rename the ASP.NET Identity table names and more.
-        // Add your customizations after calling base.OnModelCreating(builder);
+        
+        public DbSet<Produkt> Produkty { get; set; }
+
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Zamowienie> Zamowienia { get; set; }
+        public DbSet<ElementZamowienia> ElementyZamowienia { get; set; }
     }
 }

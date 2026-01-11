@@ -6,11 +6,48 @@
 
 <div class="text-center mb-5">
     <h1 class="display-5 fw-bold">Przypraw swoją kuchnię z Prymat 🌿</h1>
-    <p class="lead">
-        Najwyższej jakości przyprawy, które podkreślą smak każdego dania.
-    </p>
+    <p class="lead">Najwyższej jakości przyprawy, które podkreślą smak każdego dania.</p>
 </div>
 
+<<<<<<< HEAD
+<div class="row g-4">
+    @foreach (var produkt in Model)
+    {
+        <div class="col-md-3 col-sm-6">
+            <div class="card h-100 shadow-sm border-0">
+                <div style="height: 200px; overflow: hidden;" class="d-flex align-items-center justify-content-center bg-light rounded-top">
+                    @if (!string.IsNullOrEmpty(produkt.ImagePath))
+                    {
+                        <img src="/images/@produkt.ImagePath" class="card-img-top" alt="@produkt.Name" style="height: 100%; width: 100%; object-fit: cover;">
+                    }
+                    else
+                    {
+                        <span class="text-muted">Brak zdjęcia</span>
+                    }
+                </div>
+
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">@produkt.Name</h5>
+                    <p class="card-text text-truncate text-muted">@produkt.Description</p>
+
+                    <div class="mt-auto pt-3">
+                        <h4 class="text-primary fw-bold">@produkt.Price.ToString("c")</h4>
+
+                        <div class="d-grid gap-2">
+                            <a asp-controller="Produkty" asp-action="Kup" asp-route-id="@produkt.Id" class="btn btn-primary">
+                                Kup teraz
+                            </a>
+                            <a asp-controller="Produkty" asp-action="Details" asp-route-id="@produkt.Id" class="btn btn-outline-secondary btn-sm">
+                                Szczegóły
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+=======
 @foreach (var cat in categories)
 {
     <section class="mb-5">
@@ -38,3 +75,4 @@
 
 }
 
+>>>>>>> B

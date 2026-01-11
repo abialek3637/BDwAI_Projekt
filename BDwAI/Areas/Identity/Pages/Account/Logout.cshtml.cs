@@ -5,12 +5,12 @@
 using System;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
-using BDwAI.Areas.Identity.Data;
+
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-
+using BDwAI.Models;
 namespace BDwAI.Areas.Identity.Pages.Account
 {
     public class LogoutModel : PageModel
