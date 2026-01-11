@@ -12,6 +12,7 @@ var connectionString = builder.Configuration.GetConnectionString("AppDBContextCo
 builder.Services.AddDbContext<AppDBContext>(options =>
     options.UseSqlServer(connectionString));
 
+
 builder.Services.AddDefaultIdentity<AppUser>(options =>
 {
     options.SignIn.RequireConfirmedAccount = false;

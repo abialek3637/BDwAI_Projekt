@@ -10,8 +10,8 @@ namespace BDwAI.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly AppDBContext _context; 
+    
 
-      
         public HomeController(ILogger<HomeController> logger, AppDBContext context)
         {
             _logger = logger;
