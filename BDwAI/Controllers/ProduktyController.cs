@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BDwAI.Models;
+using System.Diagnostics;
 
 namespace BDwAI.Controllers
 {
@@ -55,6 +56,8 @@ namespace BDwAI.Controllers
         // GET: Produkty/Create
         public IActionResult Create()
         {
+            ViewBag.CategoryId = new SelectList(_context.Categories, "Id", "Name");
+
             return View();
         }
 
@@ -86,7 +89,8 @@ namespace BDwAI.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-
+            Debug.WriteLine(produkt.CategoryId);
+            ViewBag.CategoryId = new SelectList(_context.Categories,"Id","Name",produkt.CategoryId);
             return View(produkt);
         }
 

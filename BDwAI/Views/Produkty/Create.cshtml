@@ -10,7 +10,8 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create" enctype="multipart/form-data">
+        <form asp-action="Create" method="POST" enctype="multipart/form-data">
+            @Html.AntiForgeryToken()
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Name" class="control-label"></label>
@@ -34,11 +35,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="CategoryId"></label>
-                <select asp-for="CategoryId" class="form-control">
-                    <option value="">-- Wybierz kategorię --</option>
-                    <option value=1>ostre</option>
-                    <option value=2>słone</option>
-                    <option value=3>słodkie</option>
+                <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.CategoryId">
 
                 </select>
             </div>
