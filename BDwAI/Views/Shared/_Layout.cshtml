@@ -22,10 +22,20 @@
 
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        
-                        <li class="nav-item">
-                            <a class="nav-link text-dark fw-bold" asp-area="" asp-controller="Produkty" asp-action="Index">Oferta</a>
-                        </li>
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Produkty" asp-action="Index">
+                                    📦 Panel produktów
+                                </a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Zamowienia" asp-action="Index">
+                                    📂 Zobacz Zamówienia
+                                </a>
+                            </li>
+                        }
                     </ul>
 
                     <partial name="_LoginPartial" />
