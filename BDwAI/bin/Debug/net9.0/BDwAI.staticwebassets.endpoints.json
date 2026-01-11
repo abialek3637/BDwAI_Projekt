@@ -9428,6 +9428,88 @@
       ]
     },
     {
+      "Route": "images/3842f768-68ad-4c91-a436-55bbc0b34254.jpg",
+      "AssetFile": "images/3842f768-68ad-4c91-a436-55bbc0b34254.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25749"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lRD/Q9whASBV2QccGi3acc1plSCmEh+Ddt7VsxKWtVQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 Jan 2026 13:52:11 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lRD/Q9whASBV2QccGi3acc1plSCmEh+Ddt7VsxKWtVQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/3842f768-68ad-4c91-a436-55bbc0b34254.lstzb9qltv.jpg",
+      "AssetFile": "images/3842f768-68ad-4c91-a436-55bbc0b34254.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25749"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lRD/Q9whASBV2QccGi3acc1plSCmEh+Ddt7VsxKWtVQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 Jan 2026 13:52:11 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lstzb9qltv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lRD/Q9whASBV2QccGi3acc1plSCmEh+Ddt7VsxKWtVQ="
+        },
+        {
+          "Name": "label",
+          "Value": "images/3842f768-68ad-4c91-a436-55bbc0b34254.jpg"
+        }
+      ]
+    },
+    {
       "Route": "images/5219de20-58b9-401a-af2d-8c97dc8b01ed.g1p41d7o3u.jpg",
       "AssetFile": "images/5219de20-58b9-401a-af2d-8c97dc8b01ed.jpg",
       "Selectors": [],

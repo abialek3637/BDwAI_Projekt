@@ -89,10 +89,12 @@ namespace BDwAI.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            Debug.WriteLine(produkt.CategoryId);
             ViewBag.CategoryId = new SelectList(_context.Categories,"Id","Name",produkt.CategoryId);
             return View(produkt);
         }
+
+
+
 
 
         // GET: Produkty/Edit/5

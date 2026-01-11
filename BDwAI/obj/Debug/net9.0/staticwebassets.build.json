@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AiC7a5v1hTPN3dFllaCYvnTfM4EHCktE57fk7o6rc1s=",
+  "Hash": "Eabrbd0GSq/ZIS+dF86b+qjYXzP0oY1IN3P/OYbrUuY=",
   "Source": "BDwAI",
   "BasePath": "_content/BDwAI",
   "Mode": "Default",
@@ -4068,6 +4068,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\wwwroot\\images\\3842f768-68ad-4c91-a436-55bbc0b34254.jpg",
+      "SourceId": "BDwAI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\wwwroot\\",
+      "BasePath": "_content/BDwAI",
+      "RelativePath": "images/3842f768-68ad-4c91-a436-55bbc0b34254#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lstzb9qltv",
+      "Integrity": "lRD/Q9whASBV2QccGi3acc1plSCmEh+Ddt7VsxKWtVQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\3842f768-68ad-4c91-a436-55bbc0b34254.jpg"
     },
     {
       "Identity": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\wwwroot\\images\\5219de20-58b9-401a-af2d-8c97dc8b01ed.jpg",
@@ -15135,6 +15156,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-1HkjQSVuV0/ji/X/lGeDTHeagBS0BwopMrHDQuwqgtU="
+        }
+      ]
+    },
+    {
+      "Route": "images/3842f768-68ad-4c91-a436-55bbc0b34254.jpg",
+      "AssetFile": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\wwwroot\\images\\3842f768-68ad-4c91-a436-55bbc0b34254.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25749"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lRD/Q9whASBV2QccGi3acc1plSCmEh+Ddt7VsxKWtVQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 Jan 2026 13:52:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lRD/Q9whASBV2QccGi3acc1plSCmEh+Ddt7VsxKWtVQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/3842f768-68ad-4c91-a436-55bbc0b34254.lstzb9qltv.jpg",
+      "AssetFile": "D:\\Dokumenty\\ProjektBDWAI\\BDwAI_Projekt\\BDwAI\\BDwAI\\wwwroot\\images\\3842f768-68ad-4c91-a436-55bbc0b34254.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25749"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lRD/Q9whASBV2QccGi3acc1plSCmEh+Ddt7VsxKWtVQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 Jan 2026 13:52:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lstzb9qltv"
+        },
+        {
+          "Name": "label",
+          "Value": "images/3842f768-68ad-4c91-a436-55bbc0b34254.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lRD/Q9whASBV2QccGi3acc1plSCmEh+Ddt7VsxKWtVQ="
         }
       ]
     },

@@ -62,6 +62,7 @@ D:\Dokumenty\ProjektBDWAI\BDwAI_Projekt\BDwAI\BDwAI\wwwroot\lib\bootstrap\dist\c
 D:\Dokumenty\ProjektBDWAI\BDwAI_Projekt\BDwAI\BDwAI\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\3842f768-68ad-4c91-a436-55bbc0b34254.jpg
 wwwroot\images\5219de20-58b9-401a-af2d-8c97dc8b01ed.jpg
 wwwroot\images\6a68471e-220c-4b39-ac36-4875fb266d1a.jpg
 wwwroot\images\af3e970c-562e-4558-b71d-8ab7fb01d00c.jpg

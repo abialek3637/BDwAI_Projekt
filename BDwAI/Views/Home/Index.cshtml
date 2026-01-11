@@ -1,6 +1,7 @@
 ﻿@model IEnumerable<BDwAI.Models.Produkt>
 @{
     ViewData["Title"] = "Strona główna";
+    var categories = ViewBag.Categories;
 }
 
 <div class="text-center mb-5">
@@ -10,32 +11,30 @@
     </p>
 </div>
 
-<section class="mb-5">
-    <h2 class="mb-3">🔥 Coś na ostro</h2>
-    <div class="row g-4">
-        @foreach (var produkt in Model.Where(p => p.CategoryId == 1))
-        {
-            @await Html.PartialAsync("_ProduktCard", produkt)
-        }
-    </div>
-</section>
+@foreach (var cat in categories)
+{
+    <section class="mb-5">
+        <a class="text-decoration-none text-dark"
+        asp-controller="Home"
+        asp-action="Category"
+        asp-route-id="@cat.Id">
+            <h2 class="display-6 fw-bold">@cat.Name</h2>
+        </a>
 
-<section class="mb-5">
-    <h2 class="mb-3">🌱 Smaki orientalne</h2>
-    <div class="row g-4">
-        @foreach (var produkt in Model.Where(p => p.CategoryId == 2))
-        {
-            @await Html.PartialAsync("_ProduktCard", produkt)
-        }
-    </div>
-</section>
+        <div class="row g-4">
 
-<section class="mb-5">
-    <h2 class="mb-3">🌍 Dla miłośników słodkiego</h2>
-    <div class="row g-4">
-        @foreach (var produkt in Model.Where(p => p.CategoryId == 3))
-        {
-            @await Html.PartialAsync("_ProduktCard", produkt)
-        }
-    </div>
-</section>
+            @{ 
+                int i = 0;
+                @foreach (var produkt in Model.Where(p => p.CategoryId == cat.Id))
+                {
+                    i++;
+                    if (i > 4) break;
+                    @await Html.PartialAsync("_ProduktCard", produkt)
+                }
+          }
+
+        </div>
+    </section>
+
+}
+
