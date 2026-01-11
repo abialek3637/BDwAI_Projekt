@@ -30,12 +30,7 @@ namespace BDwAI.Controllers
         {
            
            
-            if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
-            {
-                
-                return RedirectToAction("Index", "Produkty");
-              
-            }
+           
             var produkty = await _context.Produkty.ToListAsync();
             ViewBag.Categories = await _context.Categories.ToListAsync();
             return View(produkty);
