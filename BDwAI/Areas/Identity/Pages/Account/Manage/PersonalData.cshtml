@@ -1,0 +1,37 @@
+﻿@page
+@model PersonalDataModel
+@{
+    ViewData["Title"] = "Dane osobowe (RODO)";
+    ViewData["ActivePage"] = ManageNavPages.PersonalData;
+}
+
+<h3>@ViewData["Title"]</h3>
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="alert alert-info">
+            <p>
+                Twoje konto zawiera dane osobowe, które nam przekazałeś podczas rejestracji oraz składania zamówień.
+                Ta strona pozwala Ci pobrać te dane w formacie JSON lub trwale usunąć konto.
+            </p>
+        </div>
+
+        <div class="alert alert-warning">
+            <p>
+                <strong>Uwaga:</strong> Usunięcie tych danych trwale usunie Twoje konto i nie będzie można go odzyskać.
+            </p>
+        </div>
+
+        <form id="download-data" asp-page="DownloadPersonalData" method="post" class="mb-3">
+            <button class="btn btn-primary" type="submit">📥 Pobierz moje dane</button>
+        </form>
+
+        <p>
+            <a id="delete" asp-page="DeletePersonalData" class="btn btn-danger">🗑️ Usuń konto</a>
+        </p>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

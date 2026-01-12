@@ -1,0 +1,20 @@
+﻿@using BDwAI.Models
+@inject SignInManager<AppUser> SignInManager
+@{
+    var hasExternalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).Any();
+}
+
+<ul class="nav nav-pills flex-column">
+    <li class="nav-item">
+        <a class="nav-link @ManageNavPages.IndexNavClass(ViewContext)" id="profile" asp-page="./Index">👤 Mój Profil</a>
+    </li>
+    @if (hasExternalLogins)
+    {
+        <li class="nav-item">
+            <a id="external-login" class="nav-link @ManageNavPages.ExternalLoginsNavClass(ViewContext)" asp-page="./ExternalLogins">🔗 Logowanie zewnętrzne</a>
+        </li>
+    }
+    <li class="nav-item">
+        <a class="nav-link @ManageNavPages.PersonalDataNavClass(ViewContext)" id="personal-data" asp-page="./PersonalData">💾 Twoje dane (RODO)</a>
+    </li>
+</ul>
