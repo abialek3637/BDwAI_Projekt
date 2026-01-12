@@ -17,11 +17,11 @@ namespace BDwAI.Controllers
         private readonly AppDBContext _context;
         private readonly UserManager<AppUser> _userManager;
         private readonly IWebHostEnvironment _env;
+
         public ProduktyController(AppDBContext context, UserManager<AppUser> userManager, IWebHostEnvironment env)
         {
             _context = context;
             _userManager = userManager;
-            _env = env;
             _env = env;
         }
 
@@ -60,14 +60,11 @@ namespace BDwAI.Controllers
         // GET: Produkty/Create
         public IActionResult Create()
         {
-            ViewBag.CategoryId = new SelectList(_context.Categories, "Id", "Name");
-
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Name");
             return View();
         }
 
         // POST: Produkty/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Name,Description,Price,Quantity,ImageFile,CategoryId")] Produkt produkt)
@@ -93,13 +90,9 @@ namespace BDwAI.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewBag.CategoryId = new SelectList(_context.Categories,"Id","Name",produkt.CategoryId);
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Name", produkt.CategoryId);
             return View(produkt);
         }
-
-
-
-
 
         // GET: Produkty/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -114,12 +107,11 @@ namespace BDwAI.Controllers
             {
                 return NotFound();
             }
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Name", produkt.CategoryId);
             return View(produkt);
         }
 
         // POST: Produkty/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Description,Price,Quantity,ImageFile,CategoryId")] Produkt produkt)
@@ -146,6 +138,7 @@ namespace BDwAI.Controllers
 
                     produkt.ImagePath = "/images/" + fileName;
                 }
+
                 try
                 {
                     _context.Update(produkt);
@@ -164,6 +157,7 @@ namespace BDwAI.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Name", produkt.CategoryId);
             return View(produkt);
         }
 
@@ -204,7 +198,8 @@ namespace BDwAI.Controllers
         {
             return _context.Produkty.Any(e => e.Id == id);
         }
-        [Authorize] // Wymaga logowania (opcjonalne, usuń jeśli każdy może kupić)
+
+        [Authorize]
         public async Task<IActionResult> Kup(int? id)
         {
             if (id == null) return NotFound();
@@ -212,10 +207,8 @@ namespace BDwAI.Controllers
             var produkt = await _context.Produkty.FindAsync(id);
             if (produkt == null) return NotFound();
 
-            // Tworzymy nowe zamówienie i wstępnie je wypełniamy
             var zamowienie = new Zamowienie();
 
-            // Jeśli użytkownik jest zalogowany, pobierz jego dane
             var user = await _userManager.GetUserAsync(User);
             if (user != null)
             {
@@ -227,47 +220,41 @@ namespace BDwAI.Controllers
                 zamowienie.AppUserId = user.Id;
             }
 
-            // Przekazujemy produkt przez ViewBag, żeby wyświetlić jego nazwę i cenę
             ViewBag.Produkt = produkt;
 
             return View(zamowienie);
         }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Kup(Zamowienie zamowienie, int produktId, int ilosc)
         {
-            // 1. Pobieramy produkt z bazy, żeby znać aktualną cenę
             var produkt = await _context.Produkty.FindAsync(produktId);
 
             if (produkt != null)
             {
-                // 2. Ustawiamy datę i całkowitą kwotę
                 zamowienie.DataZamowienia = DateTime.Now;
                 zamowienie.TotalAmount = produkt.Price * ilosc;
 
-                // Jeśli user jest zalogowany, przypisz ID (dla pewności)
                 var user = await _userManager.GetUserAsync(User);
                 if (user != null) zamowienie.AppUserId = user.Id;
 
-                // 3. Tworzymy element zamówienia (co kupił)
                 var element = new ElementZamowienia
                 {
                     ProduktId = produktId,
                     CenaJednostkowa = produkt.Price,
                     Ilosc = ilosc,
-                    Zamowienie = zamowienie // EF sam połączy te obiekty
+                    Zamowienie = zamowienie
                 };
 
-                // 4. Dodajemy do bazy
                 _context.Zamowienia.Add(zamowienie);
                 _context.ElementyZamowienia.Add(element);
 
-                // Zmniejsz stan magazynowy (opcjonalnie)
                 produkt.Quantity -= ilosc;
 
                 await _context.SaveChangesAsync();
 
-                return RedirectToAction(nameof(Index)); // Wróć do listy po sukcesie
+                return RedirectToAction(nameof(Index));
             }
 
             return View(zamowienie);
