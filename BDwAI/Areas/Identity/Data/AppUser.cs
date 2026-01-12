@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace BDwAI.Models
 {
-    // Dziedziczymy po IdentityUser, żeby mieć Login, Hasło, Email itp.
+    
     public class AppUser : IdentityUser
     {
         [Display(Name = "Imię")]
@@ -21,7 +21,7 @@ namespace BDwAI.Models
         [Display(Name = "Kod pocztowy")]
         public string? ZipCode { get; set; }
 
-        // Relacja: Jeden użytkownik może mieć wiele zamówień
+       
         public ICollection<Zamowienie>? Zamowienia { get; set; }
     }
 }

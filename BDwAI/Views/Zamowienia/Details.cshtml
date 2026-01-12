@@ -1,0 +1,82 @@
+﻿@model BDwAI.Models.Zamowienie
+
+@{
+    ViewData["Title"] = "Szczegóły zamówienia";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1>Szczegóły zamówienia <span class="text-muted">#@Model.Id</span></h1>
+        <a asp-action="Index" class="btn btn-outline-secondary">⬅ Powrót do listy</a>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card shadow-sm mb-4">
+                <div class="card-header bg-light fw-bold">
+                    📦 Dane wysyłkowe
+                </div>
+                <div class="card-body">
+                    <p class="mb-1"><strong>Data złożenia:</strong> @Model.DataZamowienia.ToString("dd.MM.yyyy HH:mm")</p>
+                    <p class="mb-1"><strong>Status:</strong> <span class="badge bg-success">Przyjęte</span></p>
+                    <hr />
+                    <h5 class="card-title">@Model.Imie @Model.Nazwisko</h5>
+                    <p class="card-text text-muted">
+                        @Model.Adres<br />
+                        @Model.KodPocztowy @Model.Miasto
+                    </p>
+                    <hr />
+                    <small class="text-muted">Email klienta (login):</small><br />
+                    <span>@(Model.User != null ? Model.User.Email : "Konto usunięte/Brak")</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    🛒 Zamówione produkty
+                </div>
+                <div class="card-body p-0">
+                    <table class="table table-striped table-hover mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Produkt</th>
+                                <th class="text-center">Cena jedn.</th>
+                                <th class="text-center">Ilość</th>
+                                <th class="text-end">Suma</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.ElementyZamowienia)
+                            {
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            @if (item.Produkt != null && !string.IsNullOrEmpty(item.Produkt.ImagePath))
+                                            {
+                                                <img src="/images/@item.Produkt.ImagePath" style="width: 40px; height: 40px; object-fit: cover; margin-right: 10px;" class="rounded" />
+                                            }
+                                            <span class="fw-bold">@(item.Produkt?.Name ?? "Produkt usunięty")</span>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">@item.CenaJednostkowa.ToString("c")</td>
+                                    <td class="text-center">@item.Ilosc szt.</td>
+                                    <td class="text-end fw-bold">@((item.CenaJednostkowa * item.Ilosc).ToString("c"))</td>
+                                </tr>
+                            }
+                        </tbody>
+                        <tfoot class="bg-light">
+                            <tr>
+                                <td colspan="3" class="text-end text-uppercase text-muted pt-3">Łączna kwota:</td>
+                                <td class="text-end fs-4 fw-bold text-primary pt-3">
+                                    @Model.TotalAmount.ToString("c")
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
