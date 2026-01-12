@@ -27,7 +27,7 @@ namespace BDwAI.Models
         [Required]
         public string KodPocztowy { get; set; }
 
-        
-        public List<ElementZamowienia> Elementy { get; set; } = new List<ElementZamowienia>();
+
+        public List<ElementZamowienia> ElementyZamowienia { get; set; } = new List<ElementZamowienia>();
     }
 }

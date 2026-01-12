@@ -1,0 +1,49 @@
+﻿@model BDwAI.Models.Zamowienie
+
+@{
+    ViewData["Title"] = "Potwierdzenie zamówienia";
+    var dataDostawy = Model.DataZamowienia.AddDays(7);
+
+    string dzienTygodnia = dataDostawy.DayOfWeek switch
+    {
+        DayOfWeek.Monday => "Poniedziałek",
+        DayOfWeek.Tuesday => "Wtorek",
+        DayOfWeek.Wednesday => "Środa",
+        DayOfWeek.Thursday => "Czwartek",
+        DayOfWeek.Friday => "Piątek",
+        DayOfWeek.Saturday => "Sobota",
+        DayOfWeek.Sunday => "Niedziela",
+        _ => ""
+    };
+}
+
+<div class="container mt-5 text-center">
+    <div class="card shadow-lg p-5 border-0">
+        <div class="mb-4">
+            <h1 class="display-1 text-success">✅</h1>
+        </div>
+
+        <h2 class="mb-3">Dziękujemy za złożenie zamówienia!</h2>
+        <p class="lead text-muted">Twoje zamówienie nr <strong>#@Model.Id</strong> zostało przyjęte do realizacji.</p>
+
+        <hr class="my-4 w-50 mx-auto">
+
+        <div class="row justify-content-center">
+            <div class="col-md-6 bg-light p-4 rounded">
+                <h4>🚚 Przewidywana dostawa</h4>
+                <p class="display-6 fw-bold text-primary">
+                    @dataDostawy.ToString("dd.MM.yyyy")
+                </p>
+                <p class="text-muted mb-0 fs-4">
+                    @dzienTygodnia
+                </p>
+            </div>
+        </div>
+
+        <div class="mt-5">
+            <a asp-controller="Home" asp-action="Index" class="btn btn-outline-primary btn-lg px-5 rounded-pill">
+                🏠 Powrót do strony głównej
+            </a>
+        </div>
+    </div>
+</div>

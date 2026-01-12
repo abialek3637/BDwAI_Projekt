@@ -1,0 +1,119 @@
+﻿@model BDwAI.Models.Zamowienie
+@{
+    ViewData["Title"] = "Złóż zamówienie";
+    var produkt = ViewBag.Produkt as BDwAI.Models.Produkt;
+
+    string cenaJS = produkt.Price.ToString("0.00", System.Globalization.CultureInfo.InvariantCulture);
+}
+
+<div class="container mt-5">
+
+    @if (!ViewData.ModelState.IsValid)
+    {
+        <div class="alert alert-danger">
+            @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+        </div>
+    }
+
+    <div class="row">
+        <div class="col-md-7">
+            <h2 class="mb-4">Dane do wysyłki</h2>
+            <form asp-action="Create" method="post">
+                <input type="hidden" name="produktId" value="@produkt.Id" />
+
+                <div class="card bg-light mb-4 border-0">
+                    <div class="card-body">
+                        <label class="form-label fw-bold">Ile sztuk chcesz zamówić?</label>
+                        <div class="input-group">
+                            <span class="input-group-text">Sztuk:</span>
+                            <input type="number" name="ilosc" id="iloscInput"
+                                   class="form-control" value="1" min="1" max="@produkt.Quantity" required
+                                   onchange="przeliczCene()" onkeyup="przeliczCene()" />
+                        </div>
+                        <small class="text-muted">Dostępne w magazynie: <strong>@produkt.Quantity</strong> szt.</small>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label class="form-label">Imię</label>
+                        <input asp-for="Imie" class="form-control" required />
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Nazwisko</label>
+                        <input asp-for="Nazwisko" class="form-control" required />
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Adres (Ulica i numer)</label>
+                    <input asp-for="Adres" class="form-control" placeholder="np. Słoneczna 5/12" required />
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <label class="form-label">Kod pocztowy</label>
+                        <input asp-for="KodPocztowy" class="form-control" placeholder="00-000" required />
+                    </div>
+                    <div class="col-md-8">
+                        <label class="form-label">Miasto</label>
+                        <input asp-for="Miasto" class="form-control" required />
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-success btn-lg w-100 mt-3">
+                    ✅ Kupuję i płacę <span id="sumaDoZaplaty">@produkt.Price.ToString("c")</span>
+                </button>
+            </form>
+        </div>
+
+        <div class="col-md-5">
+            <div class="card shadow-sm sticky-top" style="top: 20px;">
+                <div class="card-header bg-primary text-white">
+                    Twoje zamówienie
+                </div>
+                <div class="card-body text-center">
+                    @if (!string.IsNullOrEmpty(produkt.ImagePath))
+                    {
+                        <img src="/images/@produkt.ImagePath" class="img-fluid rounded mb-3" style="max-height: 200px;" />
+                    }
+                    <h4>@produkt.Name</h4>
+                    <p class="text-muted">Cena za sztukę: @produkt.Price.ToString("c")</p>
+                    <hr />
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Ilość:</span>
+                        <strong id="podsumowanieIlosc">1</strong>
+                    </div>
+                    <hr />
+                    <h3 class="text-primary fw-bold">
+                        Razem: <span id="sumaPodsumowanie">@produkt.Price.ToString("c")</span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function przeliczCene() {
+   
+        var cenaJednostkowa = @cenaJS;
+
+
+        var ilosc = document.getElementById("iloscInput").value;
+
+     
+        if (ilosc < 1) ilosc = 1;
+
+  
+        var suma = cenaJednostkowa * ilosc;
+
+       
+        var sformatowanaSuma = suma.toFixed(2).replace('.', ',') + " zł";
+
+   
+        document.getElementById("sumaDoZaplaty").innerText = sformatowanaSuma;
+        document.getElementById("sumaPodsumowanie").innerText = sformatowanaSuma;
+        document.getElementById("podsumowanieIlosc").innerText = ilosc;
+    }
+</script>
