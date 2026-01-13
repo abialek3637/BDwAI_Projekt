@@ -55,7 +55,7 @@
                                         <div class="d-flex align-items-center">
                                             @if (item.Produkt != null && !string.IsNullOrEmpty(item.Produkt.ImagePath))
                                             {
-                                                <img src="/images/@item.Produkt.ImagePath" style="width: 40px; height: 40px; object-fit: cover; margin-right: 10px;" class="rounded" />
+                                                <img src="@item.Produkt.ImagePath" style="width: 40px; height: 40px; object-fit: cover; margin-right: 10px;" class="rounded" />
                                             }
                                             <span class="fw-bold">@(item.Produkt?.Name ?? "Produkt usunięty")</span>
                                         </div>
