@@ -5,7 +5,7 @@
 }
 
 <div class="text-center mb-5">
-    <h1 class="display-5 fw-bold">Przypraw swoją kuchnię z Prymat 🌿</h1>
+    <h1 class="display-5 fw-bold">Przypraw swoją kuchnię z Przyprawex 🌿</h1>
     <p class="lead">Najwyższej jakości przyprawy, które podkreślą smak każdego dania.</p>
 </div>
 
@@ -16,7 +16,7 @@
         asp-controller="Home"
         asp-action="Category"
         asp-route-id="@cat.Id">
-            <h2 class="display-6 fw-bold">@cat.Name</h2>
+            <h2 class="display-6 fw-bold">@cat.Name <small class="text-muted fs-6">Zobacz więcej</small></h2>
         </a>
 
         <div class="row g-4">
